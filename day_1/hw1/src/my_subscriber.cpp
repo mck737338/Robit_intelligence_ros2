@@ -8,7 +8,7 @@ class MySub : public rclcpp::Node
 public:
   MySub() : Node("my_sub")
   {
-    // "my_topic"을 구독. 메시지 수신 시 람다 콜백 실행
+    // "my_topic"을 구독. 메시지 수신 시 콜백 실행
     sub_ = create_subscription<my_interfaces::msg::MyMsg>(
       "my_topic", 10,
       [this](const my_interfaces::msg::MyMsg & msg) {
