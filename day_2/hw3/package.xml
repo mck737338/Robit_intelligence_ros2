@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hw3</name>
+  <version>0.1.0</version>
+  <description>
+     QThread 기반 다중 토픽 모니터링 대시보드.
+     하나의 publisher가 string/int/float 형식의 데이터를 각각 다른 토픽 3개에
+     발행하고, 대시보드는 3개의 subscriber로 각 토픽을 구독하여 실시간 표시한다.
+     일정 시간(2초) 이상 메시지가 없으면 "응답 없음"으로 표시하며,
+     버튼 클릭 시 서비스 호출로 publisher_node를 재시작 요청한다.
+  </description>
+  <maintainer email="author@mail.com">author</maintainer>
+  <author>author</author>
+  <license>BSD</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>libqt5-core</depend>
+  <depend>libqt5-gui</depend>
+  <depend>libqt5-widgets</depend>
+  <depend>libqt5-network</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

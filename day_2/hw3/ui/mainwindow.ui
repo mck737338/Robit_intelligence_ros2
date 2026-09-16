@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowDesign</class>
+ <widget class="QMainWindow" name="MainWindowDesign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>다중 토픽 모니터링 대시보드</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>480</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>다중 토픽 모니터링 대시보드</string>
+    </property>
+   </widget>
+
+   <widget class="QGroupBox" name="stringGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>480</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>String 토픽 (/dashboard/string_topic)</string>
+    </property>
+    <widget class="QLabel" name="stringValueLabelCaption">
+     <property name="geometry">
+      <rect><x>15</x><y>28</y><width>40</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>값:</string></property>
+    </widget>
+    <widget class="QLabel" name="stringValueLabel">
+     <property name="geometry">
+      <rect><x>60</x><y>28</y><width>290</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>(대기 중)</string></property>
+    </widget>
+    <widget class="QLabel" name="stringStatusLabel">
+     <property name="geometry">
+      <rect><x>360</x><y>28</y><width>105</width><height>25</height></rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignVCenter</set>
+     </property>
+     <property name="text"><string>응답 없음</string></property>
+    </widget>
+   </widget>
+
+   <widget class="QGroupBox" name="intGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>480</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Int 토픽 (/dashboard/int_topic)</string>
+    </property>
+    <widget class="QLabel" name="intValueLabelCaption">
+     <property name="geometry">
+      <rect><x>15</x><y>28</y><width>40</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>값:</string></property>
+    </widget>
+    <widget class="QLabel" name="intValueLabel">
+     <property name="geometry">
+      <rect><x>60</x><y>28</y><width>290</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>(대기 중)</string></property>
+    </widget>
+    <widget class="QLabel" name="intStatusLabel">
+     <property name="geometry">
+      <rect><x>360</x><y>28</y><width>105</width><height>25</height></rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignVCenter</set>
+     </property>
+     <property name="text"><string>응답 없음</string></property>
+    </widget>
+   </widget>
+
+   <widget class="QGroupBox" name="floatGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>480</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Float 토픽 (/dashboard/float_topic)</string>
+    </property>
+    <widget class="QLabel" name="floatValueLabelCaption">
+     <property name="geometry">
+      <rect><x>15</x><y>28</y><width>40</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>값:</string></property>
+    </widget>
+    <widget class="QLabel" name="floatValueLabel">
+     <property name="geometry">
+      <rect><x>60</x><y>28</y><width>290</width><height>25</height></rect>
+     </property>
+     <property name="text"><string>(대기 중)</string></property>
+    </widget>
+    <widget class="QLabel" name="floatStatusLabel">
+     <property name="geometry">
+      <rect><x>360</x><y>28</y><width>105</width><height>25</height></rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignVCenter</set>
+     </property>
+     <property name="text"><string>응답 없음</string></property>
+    </widget>
+   </widget>
+
+   <widget class="QPushButton" name="restartButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>480</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>퍼블리셔 재시작</string>
+    </property>
+   </widget>
+
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
