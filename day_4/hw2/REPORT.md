@@ -5,6 +5,8 @@
 
 ## CP1 — Launch 한 번으로 bringup, 모든 컨트롤러 active
 
+![img](img/1.png)
+
 ```bash
 ros2 launch eclipse_bringup_hong eclipse_bringup.launch.py
 ```
@@ -14,6 +16,8 @@ robot_state_publisher, controller_manager, 6개 컨트롤러 spawner(joint_state
 ---
 
 ## CP2 — 카메라 타워 관절 4개 명령
+
+![img](img/2.png)
 
 ```bash
 ros2 topic pub --once /camera_tower_controller/commands \
@@ -25,6 +29,8 @@ camera_tower_controller(JointGroupPositionController)에 ct_joint1_1, ct_joint1_
 ---
 
 ## CP3 — 팔 관절 6개, 컨트롤러 하나로 궤적 명령
+
+![img](img/3.png)
 
 ```bash
 ros2 topic pub --once /arm_controller/joint_trajectory \
@@ -40,6 +46,8 @@ arm_controller(JointTrajectoryController) 하나에 arm_joint1~6의 이름과 �
 
 ### 4-1. 바퀴 (diff_drive_controller)
 
+![img](img/4-1.png)
+
 ```bash
 ros2 topic pub --once /diff_drive_controller/cmd_vel \
   geometry_msgs/msg/TwistStamped \
@@ -49,6 +57,8 @@ ros2 topic pub --once /diff_drive_controller/cmd_vel \
 diff_drive_controller가 구독하는 TwistStamped 타입 토픽에 header와 선속도 x=0.2인 twist 값을 전달한다.
 
 ### 4-2. 플리퍼 (flipper_controller)
+
+![img](img/4-2.png)
 
 ```bash
 ros2 topic pub --once /flipper_controller/commands \
